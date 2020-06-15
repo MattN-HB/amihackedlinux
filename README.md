@@ -4,7 +4,9 @@ List of checks to see if your linux box has been hacked.
 ## MVP:
 
 1. Do each check and prompt before continue
-2. See .sh for the files
+2. See .sh for the checks
+3. Compare baseline and show running gui like bashtop
+4. Push to grafana
 
 ## Set-up:
 Works on linux machine
