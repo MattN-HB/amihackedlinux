@@ -6,22 +6,22 @@
 
 #Checks latest actions by user set to last five entries
 
-"Latest actions by user"
+echo "Latest actions by user"
 last -4
-read - p "Press any key to next check"
+read - t 5 - p "I am going to wait for 5 seconds only ..." 
 
 # show established connections
-"Established Connections:"
+echo "Established Connections:"
 sudo netstat -atnp | grep ESTA
 read - p "Press any key to next check"
 
 #show listening connections
-"Listening Connections:" 
+echo "Listening Connections:" 
 sudo netstat -atnp | grep LIST
 read - p "Press any key to next check"
 
 #network processes running
-"Network Processes running"
+echo "Network Processes running"
 lsof -i 
 read - p "Press any key to next check"
 
@@ -30,7 +30,7 @@ read - p "Press any key to next check"
 #read - p "Press any key to next check"
 
 #processes running on
-"Processe running"
+echo "Processe running"
 ps -au
 read - p "Press any key to next check"
 
@@ -39,18 +39,18 @@ read - p "Press any key to next check"
 #read - p "Press any key to next check"
 
 #check ssh connections
-"SSh connections"
+echo "SSh connections"
 sudo tail -n300 /var/log/auth.log | grep sshd
 read - p "Press any key to next check"
 
 #scan using nmap localhost
-"NMAP local"
+echo "NMAP local"
 nmap localhost
 read - p "Press any key to next check"
 
 #check common attack points
 #ls /tmp -la
-"Common attach points"
+echo "Common attack points"
 ls /dev/shm -la
 ls /var/tmp -la
 read - p "Press any key to next check"
@@ -62,7 +62,7 @@ read - p "Press any key to next check"
 #systemctl list-timers
 
 #list out proceeses 
-"Processes"
+echo "Processes"
 top
 read - p "Press any key to next check"
 
