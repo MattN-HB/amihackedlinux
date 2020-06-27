@@ -61,8 +61,10 @@ read - p "Press any key to next check"
 #check services
 #systemctl list-timers
 
-#list out proceeses 
+#list out proceeses https://www.lifewire.com/linux-top-command-2201163  
 echo "Processes"
-top
-read - p "Press any key to next check"
+#top -i 
+#htop
 
+#instead above run bashtop from this github https://github.com/aristocratos/bashtop
+bashtop 
