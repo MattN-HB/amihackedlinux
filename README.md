@@ -15,7 +15,7 @@ List of checks to see if your linux box has been hacked.
 3.```$ sudo  /.amihacked.sh```
 
 ## Resources:
-*https://hackingpassion.com/determine-if-your-linux-computer-or-server-is-hacked/
-*https://github.com/aristocratos/bashtop
-*https://www.lifewire.com/linux-top-command-2201163 
+* https://hackingpassion.com/determine-if-your-linux-computer-or-server-is-hacked/
+* https://github.com/aristocratos/bashtop
+* https://www.lifewire.com/linux-top-command-2201163 
 
